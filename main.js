@@ -29,12 +29,12 @@ function submitForm(e){
 
 
 	// Get values
-	var profile = getInputVal('name');
+	var name = getInputVal('name');
 	var title = getInputVal('title');
 	var notes = getInputVal('notes');
 
 	// Save message
-	saveMessage(title, notes, profile);
+	saveMessage(title, notes, name);
 
 	  // Show alert
 	  document.querySelector('.alert').style.display = 'block';

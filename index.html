@@ -77,7 +77,7 @@
 
       function buildProfile(user){
         let profile = `
-          <h3>Name: ${user.name}</h3>`;
+          ${user.name}`;
 
         document.getElementById('profile').innerHTML = profile;
         document.getElementById('name').value = profile;

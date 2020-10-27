@@ -46,7 +46,7 @@ function submitForm(e){
 
 
   	// Clear form
-  	document.getElementById('contactForm').reset();
+  	document.getElementById('notesForm').reset();
 }
 
 //Function to get values of forms

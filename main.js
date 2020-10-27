@@ -29,8 +29,8 @@ function submitForm(e){
 
 
 	// Get values
-	//var name = getInputVal('name');
-	//var email = getInputVal('email');
+	var name = getInputVal('name');
+	var email = getInputVal('email');
 	var title = getInputVal('title');
 	var notes = getInputVal('notes');
 

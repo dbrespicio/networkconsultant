@@ -29,7 +29,7 @@ function submitForm(e){
 
 
 	// Get values
-	var name = getInputVal('name');
+	var name = getAttributeVal('name'); 
 	var title = getInputVal('title');
 	var notes = getInputVal('notes');
 
@@ -54,6 +54,10 @@ function getInputVal(id){
   return document.getElementById(id).value;
 }
 
+function getAttributeVal(id) {
+  return document.getElementById(id).getAttribute("value");
+  
+}
 
 // Save message to firebase
 function saveMessage(title, notes){

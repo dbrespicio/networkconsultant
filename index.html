@@ -20,7 +20,8 @@
 	</style>
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=769356993623458&autoLogAppEvents=1" nonce="qBqsRUW2"></script>
 <script>
 	window.fbAsyncInit = function() {
 		FB.init({
@@ -119,7 +120,7 @@
           setElements(false);
         });
       }
-      
+
 </script>
 
 
@@ -156,11 +157,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
             <li><a id="logout" href="#" onclick="logout()">Logout</a></li>
-            <fb:login-button
-              id="fb-btn"
-              scope="public_profile,email,user_birthday,user_location,user_posts"
-              onlogin="checkLoginState();">
-            </fb:login-button>
+            <div class="fb-login-button" data-size="medium" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" data-width="" id="fb-btn" scope="public_profile,email" onlogin="checkLoginState();"></div>
   	</ul>
   </div>
 </nav>

@@ -73,13 +73,6 @@
             buildProfile(response);
           }
 
-          FB.api('/me/feed', function(response){
-            if(response && !response.error){
-              buildFeed(response);
-            }
-          });
-        })
-      }
 
       function buildProfile(user){
         let profile = `
@@ -87,28 +80,12 @@
           <ul class="list-group">
             <li class="list-group-item">User ID: ${user.id}</li>
             <li class="list-group-item">Email: ${user.email}</li>
-            <li class="list-group-item">Birthday: ${user.birthday}</li>
-            <li class="list-group-item">User ID: ${user.location.name}</li>
           </ul>
         `;
 
         document.getElementById('profile').innerHTML = profile;
       }
 
-      function buildFeed(feed){
-        let output = '<h3>Latest Posts</h3>';
-        for(let i in feed.data){
-          if(feed.data[i].message){
-            output += `
-              <div class="well">
-                ${feed.data[i].message} <span>${feed.data[i].created_time}</span>
-              </div>
-            `;
-          }
-        }
-
-        document.getElementById('feed').innerHTML = output;
-      }
 
       function setElements(isLoggedIn){
         if(isLoggedIn){
@@ -171,10 +148,10 @@
 	<div class="alert">Successfully Saved!</div>
 	<form id="notesForm">
 		<div class="form-group">
-		  
+		  <br><br>
 		  <input class="form-control col-md-5" type="text" placeholder="Input title" id="title" required>
 		</div>
-
+		<br><br>
 		<div class="form-group">
 		  <textarea class="form-control col-md-5" rows="5" id="notes" placeholder="Type your notes here..."></textarea>
 		</div>

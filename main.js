@@ -17,8 +17,8 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 
-// Reference messages collection
-var messagesRef = firebase.database().ref('messages');
+// Reference collection
+var messagesRef = firebase.database().ref('notes');
 
 // Listen for form submit
 document.getElementById('notesForm').addEventListener('submit', submitForm);

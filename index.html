@@ -77,7 +77,7 @@
 
       function buildProfile(user){
         let profile = `
-          ${user.name}`;
+          <h3>Welcome, ${user.name}!`;
 
         document.getElementById('name').value = profile;
       }
@@ -86,12 +86,14 @@
       function setElements(isLoggedIn){
         if(isLoggedIn){
           document.getElementById('logout').style.display = 'block';
+          document.getElementById('profile').style.display = 'block';
           document.getElementById('name').style.display = 'block';
           document.getElementById('title').style.display = 'block';
           document.getElementById('notes').style.display = 'block';
           document.getElementById('fb-btn').style.display = 'none';
         } else {
           document.getElementById('logout').style.display = 'none';
+          document.getElementById('profile').style.display = 'none';
           document.getElementById('name').style.display = 'none';
           document.getElementById('title').style.display = 'none';
           document.getElementById('notes').style.display = 'none';
@@ -142,11 +144,11 @@
 	  
 	<div class="alert">Successfully Saved!</div>
 	<form id="notesForm">
-		
+		<div id="profile"></div>
 		<div class="form-group">
-		<input class="form-control col-md-5" type="text" id="name">
+		<input class="form-control col-md-5" type="text" placeholder="Input full name" id="name">
 		  <br><br>
-		  <input class="form-control col-md-5" type="text" placeholder="Input title" id="title" required>
+		  <input class="form-control col-md-5" type="text" placeholder="Input title" id="title">
 		</div>
 
 		<div class="form-group">

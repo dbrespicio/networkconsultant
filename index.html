@@ -16,7 +16,7 @@
 		}
 
      	#fb-btn{margin-top:20px;}
-        #profile, #logout, #feed{display:none}
+        #profile, #logout, .container{display:none}
 	</style>
 </head>
 <body>
@@ -104,12 +104,10 @@
           document.getElementById('logout').style.display = 'block';
           document.getElementById('profile').style.display = 'block';
           document.getElementById('fb-btn').style.display = 'none';
-          document.getElementById('heading').style.display = 'none';
         } else {
           document.getElementById('logout').style.display = 'none';
           document.getElementById('profile').style.display = 'none';
           document.getElementById('fb-btn').style.display = 'block';
-          document.getElementById('heading').style.display = 'block';
         }
       }
 
@@ -145,22 +143,14 @@
       <li class="nav-item">
         <a class="nav-link" href="#">About</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-        </div>
-      </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-            <li><a id="logout" href="#" onclick="logout()">Logout</a></li>
+            <button type="button" id="logout" class="btn btn-outline-info"  href="#" onclick="logout()">Logout</button>
             <div class="fb-login-button" data-size="medium" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" data-width="" id="fb-btn" scope="public_profile,email" onlogin="checkLoginState();"></div>
   	</ul>
   </div>
 </nav>
 <div class="container">
-	  <h3 id="heading">Welcome!</h3>
 	  <div id="profile"></div>
 	  <div id="email"></div>
 	<div class="alert">Successfully Saved!</div>

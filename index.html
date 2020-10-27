@@ -103,13 +103,11 @@
         if(isLoggedIn){
           document.getElementById('logout').style.display = 'block';
           document.getElementById('profile').style.display = 'block';
-          document.getElementById('feed').style.display = 'block';
           document.getElementById('fb-btn').style.display = 'none';
           document.getElementById('heading').style.display = 'none';
         } else {
           document.getElementById('logout').style.display = 'none';
           document.getElementById('profile').style.display = 'none';
-          document.getElementById('feed').style.display = 'none';
           document.getElementById('fb-btn').style.display = 'block';
           document.getElementById('heading').style.display = 'block';
         }
@@ -162,6 +160,9 @@
   </div>
 </nav>
 <div class="container">
+	  <h3 id="heading">Welcome!</h3>
+	  <div id="profile"></div>
+	  <div id="email"></div>
 	<div class="alert">Successfully Saved!</div>
 	<form id="notesForm">
 		<div class="form-group">

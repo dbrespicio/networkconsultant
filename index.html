@@ -79,7 +79,8 @@
         let profile = `
           <h3>Welcome, ${user.name}</h3>`;
 
-        document.getElementById('profile').value = profile;
+        document.getElementById('profile').innerHTML = profile;
+        document.getElementById('name').value = profile;
       }
 
 

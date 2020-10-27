@@ -29,13 +29,12 @@ function submitForm(e){
 
 
 	// Get values
-	var name = getInputVal('name');
-	var email = getInputVal('email');
+	var profile = getInputVal('profile');
 	var title = getInputVal('title');
 	var notes = getInputVal('notes');
 
 	// Save message
-	saveMessage(title, notes);
+	saveMessage(title, notes, profile);
 
 	  // Show alert
 	  document.querySelector('.alert').style.display = 'block';
@@ -61,6 +60,7 @@ function saveMessage(title, notes){
 	var newMessageRef = messagesRef.push();
 	newMessageRef.set({
 	title:title,
-	notes:notes
+	notes:notes,
+	profile:profile
 	});
 }

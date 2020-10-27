@@ -29,7 +29,7 @@ function submitForm(e){
 
 
 	// Get values
-	var profile = getInputVal('profile');
+	var profile = getInputVal('name');
 	var title = getInputVal('title');
 	var notes = getInputVal('notes');
 
@@ -61,6 +61,6 @@ function saveMessage(title, notes){
 	newMessageRef.set({
 	title:title,
 	notes:notes,
-	profile:profile
+	name:name
 	});
 }

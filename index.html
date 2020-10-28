@@ -75,12 +75,12 @@
         })
       }
 
-      function buildProfile(user){
-        let profile = `
-          <h3>Welcome, ${user.name}</h3>`;
-
-        document.getElementById('profile').innerHTML = profile;
-      }
+     // function buildProfile(user){
+        //let profile = `${user.name}`;
+        //document.getElementById('profile').innerHTML = profile;
+        
+     // }
+     document.getElementById('profile').value = `${user.name}`;
 
 
       function setElements(isLoggedIn){
@@ -145,7 +145,7 @@
 	<div class="alert">Successfully Saved!</div>
 	
 	<form id="notesForm">
-		<div id="profile"></div><br><br>
+		<input type="text" id="profile"><br><br>
 		<div class="form-group">
 		<input class="form-control col-md-5" type="text" placeholder="Input full name" id="name">
 	</div>

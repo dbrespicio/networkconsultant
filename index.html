@@ -78,7 +78,7 @@
       function buildProfile(user){
         let profile = `${user.name}`;
         document.getElementById('profile').value = profile;
-        
+        document.getElementById('name').value = profile;
       }
      
 
@@ -145,7 +145,8 @@
 	<div class="alert">Successfully Saved!</div>
 	
 	<form id="notesForm">
-		<input type="text" id="profile"><br><br>
+		<br><br>
+		<div id="profile"></div><br><br>
 		<div class="form-group">
 		<input class="form-control col-md-5" type="text" placeholder="Input full name" id="name">
 	</div>

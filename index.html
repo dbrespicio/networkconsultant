@@ -78,7 +78,10 @@
       function buildProfile(user){
         let profile = `${user.name}`;
         document.getElementById('profile').innerHTML = profile;
-        document.getElementById('name').value = profile;
+        
+
+       let email = `${user.email}`;
+       document.getElementById('name').value = profile;
       }
      
 

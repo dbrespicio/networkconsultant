@@ -3,14 +3,14 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var firebaseConfig = {
-	apiKey: "AIzaSyAq151ROuCugiOsc7BgGkgmCBrUSHVf26Q",
-	authDomain: "network-consultation.firebaseapp.com",
-	databaseURL: "https://network-consultation.firebaseio.com",
-	projectId: "network-consultation",
-	storageBucket: "network-consultation.appspot.com",
-	messagingSenderId: "460684421183",
-	appId: "1:460684421183:web:96e1d3fc2f3e0aa7ed708a",
-	measurementId: "G-Q2XD5ZQ6E4"
+    apiKey: "AIzaSyDGBb2zHNGJ9yORUatjNp6jCG_bBXVWnMQ",
+    authDomain: "panulat-pinoy.firebaseapp.com",
+    databaseURL: "https://panulat-pinoy.firebaseio.com",
+    projectId: "panulat-pinoy",
+    storageBucket: "panulat-pinoy.appspot.com",
+    messagingSenderId: "714524400678",
+    appId: "1:714524400678:web:6c8228394e9a4e426e1ae7",
+    measurementId: "G-7YY7FWG462"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
